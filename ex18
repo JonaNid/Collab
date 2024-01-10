@@ -1,0 +1,16 @@
+
+xmin=-7
+xmax=10
+ymin=-7
+ymax=12
+h= lambda x: (1/20)*(x-2)*(x+2)*(x-5)
+pl.xlim(xmin,xmax)
+pl.ylim(ymin,ymax)
+pl.plot([xmin,xmax],[0,0],[0,0],[ymin,ymax],color='black')
+X=np.linspace(xmin,xmax,100)
+
+pl.plot(X,h(X))
+pl.plot(X,X)
+pl.show()
+pl.close()
+
